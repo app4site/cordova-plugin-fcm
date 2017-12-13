@@ -12,6 +12,7 @@
 - (void)subscribeToTopic:(CDVInvokedUrlCommand*)command;
 - (void)unsubscribeFromTopic:(CDVInvokedUrlCommand*)command;
 - (void)onNotification:(CDVInvokedUrlCommand*)command;
+- (void)kill:(CDVInvokedUrlCommand*)command;
 - (void)notifyOfMessage:(NSData*) payload;
 - (void)notifyOfTokenRefresh:(NSString*) token;
 
