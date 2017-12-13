@@ -25,6 +25,10 @@ FCMPlugin.prototype.onTokenRefresh = function( callback ){
 FCMPlugin.prototype.getToken = function( success, error ){
 	exec(success, error, "FCMPlugin", 'getToken', []);
 }
+// KILL FCM //
+FCMPlugin.prototype.kill = function( success, error ){
+	exec(success, error, "FCMPlugin", 'kill', []);
+}
 
 // DEFAULT NOTIFICATION CALLBACK //
 FCMPlugin.prototype.onNotificationReceived = function(payload){
